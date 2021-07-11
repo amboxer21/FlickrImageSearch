@@ -68,9 +68,9 @@ class FlickrImageSearch(object):
             with open(fname,'wb') as f:
                 shutil.copyfileobj(req.raw, f)
         
-            print('Image('+url+') sucessfully Downloaded.')
+            print('Image('+fname+') sucessfully Downloaded.')
         else:
-            print('Image('+url+') Couldn\'t be retreived.')
+            print('Image('+fname+') Couldn\'t be retreived.')
 
 if __name__ == '__main__':
 
